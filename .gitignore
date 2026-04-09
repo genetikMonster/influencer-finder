@@ -5,3 +5,4 @@ __pycache__/
 
 Influencer Database - Influencer info-2.csv
 Influencer Database - Categories.tsv
+.streamlit/secrets.toml

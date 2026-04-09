@@ -2,6 +2,48 @@ import streamlit as st
 import pandas as pd
 from PIL import Image
 
+import streamlit as st
+import pandas as pd
+from PIL import Image
+
+
+# ---------------------------
+# SIMPLE LOGIN GATE
+# ---------------------------
+def check_login():
+    if "authenticated" not in st.session_state:
+        st.session_state.authenticated = False
+
+    if st.session_state.authenticated:
+        return True
+
+    st.set_page_config(layout="wide")
+
+    col1, col2, col3 = st.columns([1, 1.2, 1])
+
+    with col2:
+        st.markdown("## Login")
+        with st.form("login_form"):
+            username = st.text_input("Username")
+            password = st.text_input("Password", type="password")
+            submitted = st.form_submit_button("Login")
+
+        if submitted:
+            valid_username = st.secrets["auth"]["username"]
+            valid_password = st.secrets["auth"]["password"]
+
+            if username == valid_username and password == valid_password:
+                st.session_state.authenticated = True
+                st.rerun()
+            else:
+                st.error("Invalid username or password")
+
+    return False
+
+
+if not check_login():
+    st.stop()
+
 st.set_page_config(layout="wide")
 
 # --- SIDEBAR (LEFT FILTER PANEL) ---
