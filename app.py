@@ -62,15 +62,6 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-st.markdown(
-    """
-    <h1 class="breymont-title">
-        Underdogs Influencer Finder
-    </h1>
-    """,
-    unsafe_allow_html=True
-)
-
 
 # sidebar
 st.sidebar.markdown("## 🔎 Filters")
