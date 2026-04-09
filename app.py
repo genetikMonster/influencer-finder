@@ -56,7 +56,7 @@ st.markdown("""
 .breymont-title {
     font-family: 'Breymont', sans-serif !important;
     text-align: center;
-    font-weight: 700;
+    font-weight: 300;
     font-size: 2.2rem;
 }
 </style>
