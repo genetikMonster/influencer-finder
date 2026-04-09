@@ -48,18 +48,28 @@ st.markdown("""
 <style>
 @font-face {
     font-family: 'Breymont';
-    src: url('static/Breymont-Bold.ttf') format('truetype');
-    font-weight: bold;
+    src: url('/app/static/Breymont-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
 }
 
 .breymont-title {
-    font-family: 'Breymont', sans-serif;
+    font-family: 'Breymont', sans-serif !important;
     text-align: center;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 2.2rem;
 }
 </style>
 """, unsafe_allow_html=True)
+
+st.markdown(
+    """
+    <h1 class="breymont-title">
+        Underdogs Influencer Finder
+    </h1>
+    """,
+    unsafe_allow_html=True
+)
 
 
 # sidebar
