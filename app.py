@@ -7,9 +7,7 @@ import pandas as pd
 from PIL import Image
 
 
-# ---------------------------
 # SIMPLE LOGIN GATE
-# ---------------------------
 def check_login():
     if "authenticated" not in st.session_state:
         st.session_state.authenticated = False
@@ -67,7 +65,7 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-# --- SIDEBAR (LEFT FILTER PANEL) ---
+# sidebar
 st.sidebar.markdown("## 🔎 Filters")
 
 # --- Load main dataset ---
@@ -114,7 +112,7 @@ def convert_followers(x):
 
 data["Follower count"] = data["Follower count"].apply(convert_followers)
 
-# --- SIDEBAR FILTERS ---
+# sidebarfilters
 use_follower_filter = st.sidebar.checkbox("Activate follower filter")
 
 if use_follower_filter:
@@ -128,7 +126,7 @@ if use_follower_filter:
         value=(min_f, max_f)
     )
 
-# Platform filter
+#platform filter
 platform_list = []
 for val in data["Platforms"].dropna():
     val = str(val)
@@ -146,7 +144,7 @@ selected_platform = st.sidebar.selectbox("Platform", ["None"] + platform_list)
 category_list = sorted(category_long["Category"].unique().tolist())
 selected_category = st.sidebar.selectbox("Category", ["None"] + category_list)
 
-# --- MAIN CENTERED CONTENT ---
+# main centered content
 col1, col2, col3 = st.columns([1, 2, 1])
 
 with col2:
@@ -159,11 +157,14 @@ with col2:
         st.image(logo, width=180)
 
     # Title
-    st.markdown("""
-    <h1 style='text-align: center; font-family: Breymont; font-weight: bold; font-size: 2.2rem;'>
-    Underdogs Influencer Finder
+    st.markdown(
+    """
+    <h1 class="breymont-title">
+        Underdogs Influencer Finder
     </h1>
-    """, unsafe_allow_html=True)
+    """,
+    unsafe_allow_html=True
+)
 
     # Search
     all_names = sorted(data["Name"].dropna().unique())
@@ -179,7 +180,7 @@ with col2:
 
 search = search_input
 
-# --- LOGIC ---
+# logic
 if not search and not use_follower_filter and selected_platform == "None" and selected_category == "None":
     
     c1, c2, c3 = st.columns([1, 2, 1])
@@ -230,7 +231,7 @@ else:
             filtered["Name"].str.contains(search, na=False)
         ]
 
-    # --- RESULTS ---
+    # results
     if not filtered.empty:
 
         # Platform-specific ranking
