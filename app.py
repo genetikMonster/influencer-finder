@@ -60,8 +60,8 @@ st.markdown("""
     max-width: 100%;     /* 🔥 same width as column */
     margin: 0 auto;
 
-    font-size: clamp(1.4rem, 2vw, 2rem);  /* 🔥 responsive size */
-    white-space: nowrap;                  /* 🔥 never break line */
+    white-space: normal; /* 🔥 allow natural wrapping */
+    line-height: 1.2;
 }
 </style>
 """, unsafe_allow_html=True)    
