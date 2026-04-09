@@ -44,26 +44,23 @@ if not check_login():
 
 st.set_page_config(layout="wide")
 
-st.markdown(
-    """
-    <style>
-    @font-face {
-        font-family: 'Breymont';
-        src: url('app/static/Breymont-Bold.ttf') format('opentype');
-        font-weight: normal;
-        font-style: normal;
-    }
+st.markdown("""
+<style>
+@font-face {
+    font-family: 'Breymont';
+    src: url('static/Breymont-Bold.ttf') format('truetype');
+    font-weight: bold;
+}
 
-    .breymont-title {
-        font-family: 'Breymont', sans-serif;
-        text-align: center;
-        font-weight: bold;
-        font-size: 2.2rem;
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
+.breymont-title {
+    font-family: 'Breymont', sans-serif;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.2rem;
+}
+</style>
+""", unsafe_allow_html=True)
+
 
 # sidebar
 st.sidebar.markdown("## 🔎 Filters")
