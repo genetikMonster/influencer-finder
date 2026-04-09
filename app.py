@@ -57,7 +57,7 @@ st.markdown("""
     text-align: center;
     font-weight: 700;
 
-    font-size: 1.8rem;   /* 🔥 reduced size */
+    font-size: 1rem;   /* 🔥 reduced size */
     max-width: 100%;     /* 🔥 same width as column */
     margin: 0 auto;
 
