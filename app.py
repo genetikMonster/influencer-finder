@@ -49,19 +49,23 @@ st.markdown("""
 @font-face {
     font-family: 'Breymont';
     src: url('/app/static/Breymont-Bold.ttf') format('truetype');
-    font-weight: 200;
-    font-style: normal;
+    font-weight: 700;
 }
 
 .breymont-title {
     font-family: 'Breymont', sans-serif !important;
     text-align: center;
-    font-weight: 200;  
-    font-size: 0.5rem;
-    white-space: nowrap;
+    font-weight: 700;
+
+    font-size: 1.8rem;   /* 🔥 reduced size */
+    max-width: 100%;     /* 🔥 same width as column */
+    margin: 0 auto;
+
+    white-space: normal; /* 🔥 allow natural wrapping */
+    line-height: 1.2;
 }
 </style>
-""", unsafe_allow_html=True)
+""", unsafe_allow_html=True)    
 
 
 # sidebar
