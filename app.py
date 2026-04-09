@@ -162,7 +162,7 @@ with col2:
     st.markdown(
     """
     <h1 class="breymont-title">
-        Underdogs Influencer Finder
+        underdogs influencEr finder
     </h1>
     """,
     unsafe_allow_html=True
