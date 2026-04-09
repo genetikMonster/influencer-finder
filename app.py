@@ -17,7 +17,7 @@ def check_login():
 
     st.set_page_config(layout="wide")
 
-    col1, col2, col3 = st.columns([1, 2, 1])
+    col1, col2, col3 = st.columns([1, 1.2, 1])
 
     with col2:
         st.markdown("## Login")
