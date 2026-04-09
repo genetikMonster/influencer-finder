@@ -49,16 +49,16 @@ st.markdown("""
 @font-face {
     font-family: 'Breymont';
     src: url('/app/static/Breymont-Bold.ttf') format('truetype');
-    font-weight: 700;
+    font-weight: 200;
 }
 
 .breymont-title {
     font-family: 'Breymont', sans-serif !important;
     text-align: center;
-    font-weight: 700;
+    font-weight: 200;
 
     font-size: 1rem;   /* 🔥 reduced size */
-    max-width: 70%;     /* 🔥 same width as column */
+    max-width: 100%;     /* 🔥 same width as column */
     margin: 0 auto;
 
     white-space: normal; /* 🔥 allow natural wrapping */
