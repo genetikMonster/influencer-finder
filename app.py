@@ -58,7 +58,6 @@ st.markdown("""
     text-align: center;
     font-weight: 200;  
     font-size: 0.5rem;
-    white-space: nowrap;
 }
 </style>
 """, unsafe_allow_html=True)
