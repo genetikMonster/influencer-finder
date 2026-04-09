@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.env
+.DS_Store
+
+Influencer Database - Influencer info-2.csv
+Influencer Database - Categories.tsv
