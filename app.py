@@ -17,7 +17,7 @@ def check_login():
 
     st.set_page_config(layout="wide")
 
-    col1, col2, col3 = st.columns([0.5, 3, 0.5])
+    col1, col2, col3 = st.columns([1, 1.5, 1])
 
     with col2:
         st.markdown("## Login")
@@ -58,6 +58,7 @@ st.markdown("""
     text-align: center;
     font-weight: 200;  
     font-size: 0.5rem;
+    white-space: nowrap;
 }
 </style>
 """, unsafe_allow_html=True)
