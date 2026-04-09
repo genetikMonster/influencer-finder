@@ -17,7 +17,7 @@ def check_login():
 
     st.set_page_config(layout="wide")
 
-    col1, col2, col3 = st.columns([1, 1.2, 1])
+    col1, col2, col3 = st.columns([0.5, 3, 0.5])
 
     with col2:
         st.markdown("## Login")
@@ -49,15 +49,16 @@ st.markdown("""
 @font-face {
     font-family: 'Breymont';
     src: url('/app/static/Breymont-Bold.ttf') format('truetype');
-    font-weight: 100;
+    font-weight: 200;
     font-style: normal;
 }
 
 .breymont-title {
     font-family: 'Breymont', sans-serif !important;
     text-align: center;
-    font-weight: 100;  
+    font-weight: 200;  
     font-size: 0.5rem;
+    white-space: nowrap;
 }
 </style>
 """, unsafe_allow_html=True)
