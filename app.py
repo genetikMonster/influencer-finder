@@ -49,14 +49,14 @@ st.markdown("""
 @font-face {
     font-family: 'Breymont';
     src: url('/app/static/Breymont-Bold.ttf') format('truetype');
-    font-weight: 300;
+    font-weight: 100;
     font-style: normal;
 }
 
 .breymont-title {
     font-family: 'Breymont', sans-serif !important;
     text-align: center;
-    font-weight: 300;  
+    font-weight: 100;  
     font-size: 0.5rem;
 }
 </style>
