@@ -2,9 +2,7 @@ import streamlit as st
 import pandas as pd
 from PIL import Image
 
-import streamlit as st
-import pandas as pd
-from PIL import Image
+
 
 
 # SIMPLE LOGIN GATE
