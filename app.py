@@ -3,8 +3,6 @@ import pandas as pd
 from PIL import Image
 
 
-
-
 # SIMPLE LOGIN GATE
 def check_login():
     if "authenticated" not in st.session_state:
@@ -44,25 +42,80 @@ st.set_page_config(layout="wide")
 
 st.markdown("""
 <style>
+
+/* ---------------------------
+GLOBAL BACKGROUND
+--------------------------- */
+html, body, [class*="css"] {
+    background-color: #000000 !important;
+    color: #FFFFFF !important;
+}
+
+/* Main app background */
+[data-testid="stAppViewContainer"] {
+    background-color: #000000;
+}
+
+/* Sidebar */
+[data-testid="stSidebar"] {
+    background-color: #0a0a0a;
+}
+
+/* ---------------------------
+TEXT
+--------------------------- */
+h1, h2, h3, h4, h5, h6, p, span, label, div {
+    color: #FFFFFF !important;
+}
+
+/* ---------------------------
+INPUTS (search bar, etc.)
+--------------------------- */
+input, textarea {
+    background-color: #111111 !important;
+    color: #FFFFFF !important;
+    border: 1px solid #333 !important;
+}
+
+/* ---------------------------
+BUTTONS
+--------------------------- */
+button {
+    background-color: #111111 !important;
+    color: #FFFFFF !important;
+    border: 1px solid #444 !important;
+}
+
+/* ---------------------------
+DATAFRAME
+--------------------------- */
+[data-testid="stDataFrame"] {
+    background-color: #111111 !important;
+    color: white !important;
+}
+
+/* ---------------------------
+CUSTOM FONT
+--------------------------- */
 @font-face {
     font-family: 'Breymont';
     src: url('/app/static/Breymont-Bold.ttf') format('truetype');
-    font-weight: 200;
+    font-weight: 700;
 }
 
+/* ---------------------------
+TITLE
 .breymont-title {
     font-family: 'Breymont', sans-serif !important;
     text-align: center;
-    font-weight: 200;
-    font-size: 1rem;   /* 🔥 reduced size */
-    max-width: 100%;     /* 🔥 same width as column */
-    margin: 0 auto;
-
-    white-space: normal; /* 🔥 allow natural wrapping */
-    line-height: 1.2;
+    font-weight: 700;
+    font-size: clamp(1.4rem, 2vw, 2rem);
+    white-space: nowrap;
+    color: #FFFFFF !important;
 }
+
 </style>
-""", unsafe_allow_html=True)    
+""", unsafe_allow_html=True)
 
 
 # sidebar
