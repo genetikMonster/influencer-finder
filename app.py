@@ -56,7 +56,7 @@ html, body, [class*="css"] {
 /*Sidebar*/
             
 [data-testid="stSidebar"] {
-            background-color:#1D2D46}
+            background-color:#1a1e21}
 @font-face {
     font-family: 'Breymont';
     src: url('/app/static/Breymont-Bold.ttf') format('truetype');
