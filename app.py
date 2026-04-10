@@ -42,80 +42,43 @@ st.set_page_config(layout="wide")
 
 st.markdown("""
 <style>
-
-/* ---------------------------
-GLOBAL BACKGROUND
---------------------------- */
+            
 html, body, [class*="css"] {
-    background-color: #000000 !important;
-    color: #FFFFFF !important;
+            background-color: #050301 !important;
+            color: #FFFFFF !important; 
 }
+            
+/*App color*/
+[data-testid="stAppviewContainer"] {
+            background-color:#050301;
+            }
 
-/* Main app background */
-[data-testid="stAppViewContainer"] {
-    background-color: #000000;
-}
-
-/* Sidebar */
+/*Sidebar*/
+            
 [data-testid="stSidebar"] {
-    background-color: #0a0a0a;
-}
-
-/* ---------------------------
-TEXT
---------------------------- */
-h1, h2, h3, h4, h5, h6, p, span, label, div {
-    color: #FFFFFF !important;
-}
-
-/* ---------------------------
-INPUTS (search bar, etc.)
---------------------------- */
-input, textarea {
-    background-color: #111111 !important;
-    color: #FFFFFF !important;
-    border: 1px solid #333 !important;
-}
-
-/* ---------------------------
-BUTTONS
---------------------------- */
-button {
-    background-color: #111111 !important;
-    color: #FFFFFF !important;
-    border: 1px solid #444 !important;
-}
-
-/* ---------------------------
-DATAFRAME
---------------------------- */
-[data-testid="stDataFrame"] {
-    background-color: #111111 !important;
-    color: white !important;
-}
-
-/* ---------------------------
-CUSTOM FONT
---------------------------- */
+            background-color:#1D2D46}
 @font-face {
     font-family: 'Breymont';
     src: url('/app/static/Breymont-Bold.ttf') format('truetype');
-    font-weight: 700;
+    font-weight: 200;
 }
+            
+h1, h2, h3, h4, h5, h6, p, span, label, div {
+    color: #FFFFFF !important;
 
-/* ---------------------------
-TITLE
 .breymont-title {
     font-family: 'Breymont', sans-serif !important;
     text-align: center;
-    font-weight: 700;
-    font-size: clamp(1.4rem, 2vw, 2rem);
-    white-space: nowrap;
-    color: #FFFFFF !important;
-}
+    font-weight: 200;
+    font-size: 1rem;   
+    max-width: 100%;     
+    margin: 0 auto;
 
+    white-space: normal; 
+    line-height: 1.2;
+}
 </style>
-""", unsafe_allow_html=True)
+""", unsafe_allow_html=True)    
 
 
 # sidebar
