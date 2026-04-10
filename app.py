@@ -62,9 +62,6 @@ html, body, [class*="css"] {
     src: url('/app/static/Breymont-Bold.ttf') format('truetype');
     font-weight: 200;
 }
-            
-h1, h2, h3, h4, h5, h6, p, span, label, div {
-    color: #FFFFFF !important;
 
 .breymont-title {
     font-family: 'Breymont', sans-serif !important;
