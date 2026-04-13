@@ -64,7 +64,7 @@ html, body, [class*="css"] {
 }
 
 .breymont-title {
-    font-family: 'Breymont', sans-serif !important;
+    font-family: 'Breymont-Bold.ttf', sans-serif !important;
     text-align: center;
     font-weight: 200;
     font-size: 1rem;   
