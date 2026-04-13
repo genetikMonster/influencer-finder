@@ -42,40 +42,52 @@ st.set_page_config(layout="wide")
 
 st.markdown("""
 <style>
-            
-html, body, [class*="css"] {
-            background-color: #050301 !important;
-            color: #FFFFFF !important; 
-}
-            
-/*App color*/
-[data-testid="stAppviewContainer"] {
-            background-color:#050301;
-            }
 
-/*Sidebar*/
-            
+/* ---------------------------
+GLOBAL BACKGROUND
+--------------------------- */
+html, body, [class*="css"] {
+    background-color: #050301 !important;
+    color: #FFFFFF !important; 
+}
+
+/* App container */
+[data-testid="stAppViewContainer"] {
+    background-color: #050301;
+}
+
+/* Sidebar */
 [data-testid="stSidebar"] {
-            background-color:#1a1e21}
+    background-color: #1a1e21;
+}
+
+/* ---------------------------
+FONT FIX
+--------------------------- */
 @font-face {
     font-family: 'Breymont';
-    src: url('/app/static/Breymont-Bold.ttf') format('truetype');
-    font-weight: 200;
+    src: url('/app/static/Breymont-Bold.ttf') format('truetype'),
+         url('static/Breymont-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
 }
 
+/* ---------------------------
+TITLE
+--------------------------- */
 .breymont-title {
-    font-family: 'Breymont-Bold.ttf', sans-serif !important;
+    font-family: 'Breymont', sans-serif !important;
     text-align: center;
-    font-weight: 200;
-    font-size: 1rem;   
-    max-width: 100%;     
-    margin: 0 auto;
+    font-weight: 700;
+    font-size: 1.6rem;
 
-    white-space: normal; 
+    white-space: nowrap;
     line-height: 1.2;
+    color: white !important;
 }
+
 </style>
-""", unsafe_allow_html=True)    
+""", unsafe_allow_html=True)   
 
 
 # sidebar
