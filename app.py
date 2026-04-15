@@ -58,14 +58,16 @@ html, body, [class*="css"] {
             
 [data-testid="stSidebar"] {
             background-color:#1a1e21}
+
+            
 @font-face {
-    font-family: 'Breymont';
-    src: url('/static/Breymont-Bold.ttf') format('truetype');
-    font-weight: 700;
+  font-family: "Breymont-Bold";
+  src: url("static/Breymont-Bold.eot?") format("eot"), url("../fonts/Breymont-Bold.woff2") format("woff2"), url("../fonts/Breymont-Bold.woff") format("woff"), url("../fonts/Breymont-Bold.ttf") format("truetype"), url('../fonts/Breymont-Bold.svg#str-replace("Breymont-Bold", " ", "_")') format("svg");
 }
+ 
 
 .breymont-title {
-    font-family: 'Breymont-Bold.ttf', sans-serif !important;
+    font-family: "Breymont-Bold";
     text-align: center;
     font-weight: 700;
     font-size: 1rem;   
