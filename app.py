@@ -60,7 +60,7 @@ html, body, [class*="css"] {
             background-color:#1a1e21}
 @font-face {
     font-family: 'Breymont';
-    src: url('static/Breymont-Bold.ttf') format('truetype');
+    src: url('/static/Breymont-Bold.ttf') format('truetype');
     font-weight: 700;
 }
 
