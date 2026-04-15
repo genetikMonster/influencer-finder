@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 from PIL import Image
-
+import base64
 
 # SIMPLE LOGIN GATE
 def check_login():
@@ -36,9 +36,10 @@ def check_login():
 
 
 if not check_login():
-    st.stop()
+    st.stop()   
 
 st.set_page_config(layout="wide")
+
 
 st.markdown("""
 <style>
